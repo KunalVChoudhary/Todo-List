@@ -1,0 +1,83 @@
+.list-task-container{
+    display: flex;
+    border-radius: 5.8px;
+    min-height: 2.5rem;
+    overflow: hidden;
+}
+// .list-task-container:hover{
+//     color: hsl(235, 19%, 35%);
+// }
+
+.list-task-container-dark{
+    background-color: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+}
+
+.list-task-container-dark:hover {
+    border: 2px solid;
+    border-color: $primary-border-subtle-dark;
+    color: hsl(234, 11%, 52%);
+}
+
+.list-task-container-light{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(236, 9%, 61%);
+}
+
+.list-task-container-light:hover {
+    border: 2px solid;
+    border-color: $secondary-border-subtle-dark;
+    color: hsl(235, 19%, 35%);
+}
+
+.list-task-container:hover .delete-task{
+    display: flex;
+}
+
+
+
+.checkbox-task{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    cursor: pointer;
+}
+
+.checkbox-true{
+    background-image:url(../../images/icon-check.svg), linear-gradient(to right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+    background-position: center,center;
+    background-repeat: no-repeat,no-repeat;
+    background-size: auto,cover;
+}
+
+.task-detail{
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    background-color: inherit;
+    font-family: $san-srf;
+    width: 80%;
+    height: 100%;
+    padding: 8px 8px;
+    border: 0;
+    border-radius: 0;
+}
+
+.task-detail-completed{
+    color: hsl(233, 11%, 84%);
+}
+
+.delete-task{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.deleteTask{
+    cursor: pointer;
+}
+
+.dragging{
+    opacity: 0.5;
+}

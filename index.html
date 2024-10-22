@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/main.min.css">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+</head>
+<body>
+    <main>
+
+      <div class="background1 container-fluid"></div>
+
+      <div class="background2 row justify-content-center container-fluid">
+        <div class="to-do-list col-lg-6 col-md-8 col-sm-9 col-11">
+          <div class="list-heading">
+            <h1 class="app-name"> T O D O</h1>
+            <div class="theme-container">
+              <img id="theme-icon" src="images/icon-moon.svg" alt="dark">
+            </div>
+          </div>
+          <div class="input-task-container">
+            <div class="checkbox-input-text">
+              <button class="check-box" id="input-check-box" data-stage-value="false" data-task-index="null"></button>
+            </div>
+            <input class="input-task js-input-task" type="text" placeholder="To Do ..." id="input-task">
+            <div class="erase-input-text">
+              <img class='eraseInput' src="images/icon-cross.svg" alt="X">
+            </div>
+          </div>
+          <div class="display-list js-display-list"></div>
+          <div class="list-detail list-task-container mt-1 d-flex justify-content-between align-items-center row g-0">
+            <div class="items-left col-md-3 g-0 d-flex justify-content-md-start justify-content-center align-items-center"></div>
+            <div class="mode col-md-5 g-0 d-flex justify-content-md-evenly justify-content-center align-items-center">
+              <a href="" class="all-mode m-1">All</a>
+              <a href="" class="active-mode m-1">Active</a>
+              <a href="" class="completed-mode m-1">Completed</a>
+            </div>
+            <div class="remove-completed-task col-md-4 g-0 d-flex justify-content-md-end justify-content-center align-items-center">Clear Completed</div>
+          </div>
+          <div class="drag-and-drop"><p>Drag And Drop</p></div>
+        </div>
+      </div>
+
+      <div class="background3 container-fluid">
+        <div class="attribution row">
+          <div class="col-md-6 d-flex justify-content-md-end justify-content-center">
+            <p class="m-1">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.</p>
+          </div>
+          <div class="col-md-6 d-flex justify-content-md-start justify-content-center">
+            <p class="m-1">Coded by <a href="https://www.linkedin.com/in/kunal-vijayshree-choudhary" target="_blank"> Kunal Vijayshree Choudhary</a>.</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script type="module" src="javascript/main/main.js"></script>
+
+
+
+
+
+
+
+
+
+  <!-- Todo
+
+  Add dynamic number  items left
+
+  All
+  Active 
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list -->
+
+  
+</body>
+</html>

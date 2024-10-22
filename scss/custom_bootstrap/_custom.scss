@@ -1,0 +1,10 @@
+$body-color-dark:                   $gray-300 !default;
+$body-bg-dark:                      $gray-900 !default;
+
+
+$primary-text-emphasis-dark:        tint-color($primary, 40%) !default;
+$secondary-text-emphasis-dark:      tint-color($secondary, 40%) !default;
+
+
+$primary-border-subtle-dark:        shade-color($primary, 40%) !default;
+$secondary-border-subtle-dark:      shade-color($secondary, 40%) !default;

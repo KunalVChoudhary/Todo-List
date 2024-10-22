@@ -1,0 +1,146 @@
+.to-do-list{
+    position: relative;
+    top: -20vh;
+}
+
+
+.list-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.list-heading h1{
+    margin: 0;
+}
+
+.app-name{
+    color: whitesmoke;
+    font-family: $san-srf;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.theme-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+
+
+.input-task-container{
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 5.8px;
+    height: 2.5rem;
+    overflow: hidden;
+}
+
+.input-task-container:focus-within {
+    border: 2px solid;
+    border-color: $secondary-border-subtle-dark;
+}
+
+.input-task-container:hover .erase-input-text{
+    display: flex;
+}
+
+.checkbox-input-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.check-box{
+    padding: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    background-color: transparent;
+}
+
+
+.input-task{
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    background-color: inherit;
+    font-family: $san-srf;
+    width: 80%;
+    height: 100%;
+    padding: 8px 8px;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+}
+
+.placeholder-dark::placeholder {
+    color: hsl(233, 11%, 84%);
+}
+
+.placeholder-light::placeholder {
+    color: hsl(234, 11%, 52%);
+}
+
+.erase-input-text{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+.eraseInput{
+    cursor: pointer;
+}
+
+.display-list{
+    padding-top: 2rem;
+}
+
+.list-detail{
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    background-color: aliceblue;
+    font-family: $san-srf;
+}
+
+.list-detail > *{
+    padding: 0.2rem 1rem;
+    color: hsl(234, 11%, 52%);
+}
+
+.mode > *{
+    text-decoration: none;
+    padding: 0 0.2rem;
+    color: inherit;
+    cursor: pointer;
+}
+
+.current-mode-style{
+    color: hsl(220, 98%, 61%);
+}
+
+.drag-and-drop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    color: hsl(234, 11%, 52%);
+}
+
+.drag-and-drop > p {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    border: 2px solid;
+    border-color: transparent;
+}
+
+.drag-and-drop > p:hover{
+    border: 2px solid white;
+    cursor: pointer;
+}
