@@ -252,7 +252,7 @@ function themeDisplay(){
     if (themeStatus[0]=='Light'){
         //Light Mode
         themeToggler.src="images/icon-moon.svg";
-        document.querySelector('.background1').style='background-image: url(./../images/bg-desktop-light.jpg);';
+        document.querySelector('.background1').style='background-image: url(Todo-List/../images/bg-desktop-light.jpg);';
         document.querySelector('.background2').style='background-color: hsl(236, 33%, 92%);';
         document.querySelector('.input-task-container').style='background-color: hsl(0, 0%, 98%)';
         document.querySelectorAll('.list-task-container')
@@ -273,7 +273,7 @@ function themeDisplay(){
     else{
         //Dark Mode
         themeToggler.src="images/icon-sun.svg";
-        document.querySelector('.background1').style='background-image: url(./../images/bg-desktop-dark.jpg);';
+        document.querySelector('.background1').style='background-image: url(Todo-List/../images/bg-desktop-dark.jpg);';
         document.querySelector('.background2').style='background-color: hsl(235, 21%, 11%);';
         document.querySelector('.input-task-container').style='background-color: hsl(235, 24%, 19%);';
         document.querySelectorAll('.list-task-container')
